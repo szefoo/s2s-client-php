@@ -23,14 +23,4 @@ class Request extends BaseRequest implements RequestInterface
         parent::__construct($method, $uri, $headers, null, $version);
         $this->body = $body;
     }
-
-    /**
-     * Gets the body of the message.
-     *
-     * @return array|null body.
-     */
-    public function getBody(): ?array
-    {
-        return $this->body;
-    }
 }
